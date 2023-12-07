@@ -1,5 +1,12 @@
-import Image from "next/image";
+import Header from "@/components/Header";
 
 export default function Home() {
-  return <h1>portfolio</h1>;
+  return (
+    <>
+      <Header />
+      <div className="mt-24">
+        <h1>portfolio</h1>
+      </div>
+    </>
+  );
 }
