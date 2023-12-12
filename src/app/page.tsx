@@ -1,12 +1,14 @@
-import Header from "@/components/Header";
-import Wave from "@/components/Wave";
+import Header from "@/components/laytout/Header";
+import Wave from "@/components/section/intro/Wave";
+import Title from "@/components/section/intro/Title";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-100 h-[100vh] pt-24">
+      <div className="w-full h-[100vh] relative flex justify-center items-center">
         <Wave />
+        <Title />
       </div>
     </>
   );
