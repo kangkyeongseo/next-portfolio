@@ -51,7 +51,7 @@ export default function Wave() {
 
   const resize = () => {
     setStageWidth(document.body.clientWidth);
-    setStageHeight(document.body.clientHeight);
+    setStageHeight(window.innerHeight);
   };
 
   useEffect(() => {
