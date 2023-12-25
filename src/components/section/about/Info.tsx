@@ -79,7 +79,7 @@ export default function Info({ type, value }: InfoProp) {
           </svg>
         )}
       </div>
-      <div className="col-span-4 flex flex-col text-xl">
+      <div className="col-span-4 flex flex-col text-lg">
         <span className="font-bold">
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </span>
