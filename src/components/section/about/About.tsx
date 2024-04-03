@@ -1,20 +1,48 @@
-import Section from "../Section";
-import Info from "./Info";
-import Typing from "./Typing";
+'use client';
+import { motion } from 'framer-motion';
+import Section from '../Section';
+import AboutSection from './AboutSection';
+import Typing from './Typing';
+import { buttons, carrer, skills } from '../../../../public/constants';
 
 export default function About() {
   return (
-    <Section sectionId="about">
-      <div className="h-full flex justify-center items-center gap-48">
-        <div className="flex flex-col gap-5">
-          <Info type="name" value="강경서" />
-          <Info type="birth" value="1994.07.18" />
-          <Info type="phone" value="010-6415-5062" />
-          <Info type="mail" value="kks_big@naver.com" />
-        </div>
-        <div>
+    <Section sectionId='about'>
+      <div className='mx-48 grid h-full grid-cols-[2fr,2fr,3fr] items-center justify-between pt-20'>
+        <motion.div
+          className='flex flex-col items-start gap-5 text-gray-900'
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
+          <AboutSection
+            label='Name'
+            type='simpleText'
+            simpleText='강경서'
+            textSize='text-[42px]'
+          />
+          <AboutSection
+            label='Birth'
+            type='simpleText'
+            simpleText='1994.07.18'
+            textSize='text-2xl'
+          />
+          <AboutSection label='Carrer' type='carrer' carrer={carrer} />
+        </motion.div>
+        <motion.div
+          className='flex flex-col items-start gap-5 text-gray-900'
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
+          <AboutSection label='Channel' type='button' buttons={buttons} />
+          <AboutSection label='Skill' type='skill' skills={skills} />
+        </motion.div>
+        <motion.div
+          className='flex flex-col items-center justify-center text-4xl'
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <Typing />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );
