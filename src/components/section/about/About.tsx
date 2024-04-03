@@ -3,9 +3,23 @@ import { motion } from 'framer-motion';
 import Section from '../Section';
 import AboutSection from './AboutSection';
 import Typing from './Typing';
-import { buttons, carrer, skills } from '../../../../public/constants';
+import { carrer, skills } from '../../../../public/constants';
 
 export default function About() {
+  const buttons = [
+    {
+      title: 'Github',
+      href: 'https://github.com/kangkyeongseo',
+      color: 'bg-gray-800',
+      hoverColor: 'hover:bg-gray-900',
+    },
+    {
+      title: 'Velog',
+      href: 'https://velog.io/@kldream/posts',
+      color: 'bg-emerald-600',
+      hoverColor: 'hover:bg-emerald-700',
+    },
+  ];
   return (
     <Section sectionId='about'>
       <div className='mx-48 grid h-full grid-cols-[2fr,2fr,3fr] items-center justify-between pt-20'>
