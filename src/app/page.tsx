@@ -1,9 +1,8 @@
-import Header from "@/components/laytout/Header";
-import Intro from "@/components/section/intro/Intro";
-import About from "@/components/section/about/About";
-import Skill from "@/components/section/skill/Skill";
-import Project from "@/components/section/project/Project";
-import Contact from "@/components/section/contact/Contact";
+import Header from '@/components/laytout/Header';
+import Intro from '@/components/section/intro/Intro';
+import About from '@/components/section/about/About';
+import Project from '@/components/section/project/Project';
+import Contact from '@/components/section/contact/Contact';
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <Header />
       <Intro />
       <About />
-      <Skill />
       <Project />
       <Contact />
     </>
