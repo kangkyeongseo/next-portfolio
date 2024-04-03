@@ -1,39 +1,32 @@
-"use client";
-
-import { useSectionMove } from "@/hooks/useSectionMove";
+'use client';
+import { useSectionMove } from '@/hooks/useSectionMove';
 
 export default function Header() {
   const { handleSectionMove } = useSectionMove();
   return (
-    <header className="z-10 w-full fixed top-0 flex justify-between px-24 py-8 bg-[rgba(255,255,255,0.8)] ">
+    <header className='fixed top-0 z-20 flex w-screen justify-between bg-[rgba(255,255,255,0)] px-24 py-6 uppercase '>
       <h1
-        className="cursor-pointer text-lg uppercase text-gray-600 hover:text-gray-900"
-        onClick={() => handleSectionMove("intro")}
+        className='cursor-pointer text-lg text-gray-900'
+        onClick={() => handleSectionMove('intro')}
       >
         KyeongSeo
       </h1>
-      <ul className="flex space-x-8 uppercase text-gray-500">
+      <ul className='flex space-x-8 text-gray-900'>
         <li
-          className="cursor-pointer hover:text-gray-900"
-          onClick={() => handleSectionMove("about")}
+          className='cursor-pointer'
+          onClick={() => handleSectionMove('about')}
         >
           About
         </li>
         <li
-          className="cursor-pointer hover:text-gray-900"
-          onClick={() => handleSectionMove("skill")}
-        >
-          Skill
-        </li>
-        <li
-          className="cursor-pointer hover:text-gray-900"
-          onClick={() => handleSectionMove("project")}
+          className='cursor-pointer'
+          onClick={() => handleSectionMove('project')}
         >
           Project
         </li>
         <li
-          className="cursor-pointer hover:text-gray-900"
-          onClick={() => handleSectionMove("contact")}
+          className='cursor-pointer'
+          onClick={() => handleSectionMove('contact')}
         >
           Contact
         </li>
