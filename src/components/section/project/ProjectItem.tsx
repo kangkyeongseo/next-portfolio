@@ -84,7 +84,7 @@ const ProjectItem = ({
               </span>
             </Link>
           </div>
-          <div className='space-y-2 text-sm'>
+          <div className='ml-4 space-y-2 text-sm'>
             <span
               className={`px-2 py-[2px] text-xs text-gray-900 ${subColor} shadow-md`}
             >
@@ -121,7 +121,7 @@ const ProjectItem = ({
               <span
                 className={`px-2 py-[2px] text-xs text-gray-900 ${subColor} shadow-md`}
               >
-                후기
+                제작 후기
               </span>
               {review.map((item, index) => (
                 <p key={index}>{item}</p>

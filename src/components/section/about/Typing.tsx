@@ -2,7 +2,7 @@ export default function Typing() {
   return (
     <>
       <div>
-        <span className='text-5xl font-bold'>사용자의 경험</span>을 생각 하며
+        <span className='text-5xl font-bold'>사용자의 경험</span>을 생각하며
         <br />
         <span>
           더 나은 <span className='text-5xl font-bold'>서비스</span>
@@ -12,7 +12,7 @@ export default function Typing() {
       <br />
       <br />
       <div>
-        <span className='text-5xl font-bold'>개념과 원리</span>부터 학습 하여
+        <span className='text-5xl font-bold'>개념과 원리</span>부터 학습하여
         <br />
         <span>
           문제를 <span className='text-5xl font-bold'>해결</span>
