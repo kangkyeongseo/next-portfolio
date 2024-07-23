@@ -130,8 +130,6 @@ export default function Project() {
           nextEl: '.custom-navigation-next',
         }}
         pagination={{ clickable: true, el: '.custom-pagination' }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => console.log(swiper)}
       >
         {projects.map(project => (
           <SwiperSlide key={project.title}>
